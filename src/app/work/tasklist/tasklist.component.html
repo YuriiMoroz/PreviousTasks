@@ -1,0 +1,10 @@
+<div class="main">
+<h1>Plan your day</h1>
+<h2>User {{name}} {{surname}}. Count of Task {{count}}</h2>
+    <hr>
+    <div class="gray">
+    <input type="text" [(ngModel)]="task" class="fild">
+    <input type="button" (click)="AddTask()" value="Add" class="addBtn">
+    </div>
+    <app-child (changeCount)="checkStatus($event)" ></app-child>
+</div>

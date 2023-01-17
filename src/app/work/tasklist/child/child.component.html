@@ -1,0 +1,28 @@
+<div class="list">
+    <table class="tbl">
+        <tr class="head">
+            <th>#</th>
+            <th>Task</th>
+            <th>Check</th>
+            <th>DONE/IN PROGRESS</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr *ngFor="let item of TaskArr; index as i">
+            <td>{{i+1}}</td>
+            <td>{{item}}</td>
+            <td><input type="checkbox" (click)="checkStatus(i, $event)"name="" id=""></td>
+            <td class="red">{{statusList[i]}}</td>
+            <td><button class="editBtn"(click)="EditFunction(i)">Edit</button></td>
+            <td><button class="deleteBtn"(click)="DeleteFunction(i,true)" disabled="d">Delete</button></td>
+        </tr>
+        <tr *ngIf="change">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" [(ngModel)]="editTask" class="fild"></td>
+            <td><input type="button" (click)="FinishEdit()" value="Save" class="saveBtn"></td>
+            <td></td>
+        </tr>
+    </table>
+</div>

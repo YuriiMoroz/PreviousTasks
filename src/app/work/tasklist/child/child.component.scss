@@ -1,0 +1,71 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.head{
+    border-top: 1px solid grey;
+    border-bottom: 2px solid gray;
+}
+
+td,th{
+    padding: 18px 10px;
+    font-size: 20px;
+}
+
+.deleteBtn, .editBtn,.saveBtn{
+    height: 40px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.editBtn{
+    width: 60px;
+    color: black;
+    background-color: yellow;
+}
+
+.deleteBtn:disabled{
+    background-color: rgba(255, 0, 0, 0.623);
+}
+
+.red{
+    color:red;
+}
+
+td{
+    font-weight: 100;
+}
+
+tr{
+    border-bottom: 1px solid grey;
+}
+
+tr:hover{
+    background-color: rgb(196, 196, 196);
+}
+
+.change{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+input{
+    height: 30px;
+}
+
+.saveBtn{
+    width: 60px;
+    background-color: green;
+}
+
+.fild{
+    font-size: 20px;
+}

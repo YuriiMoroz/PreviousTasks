@@ -1,0 +1,14 @@
+<div class="menu">
+<div class="left">
+<span>Last works >>> </span>
+<button [routerLink]="[ '/work/cenzor' ]" routerLinkActive="active">Cenzor</button>
+<button [routerLink]="[ '/work/userlist' ]" routerLinkActive="active">Users</button>
+<button [routerLink]="[ '/work/task' ]" routerLinkActive="active">Task</button>
+</div>
+<div class="right">
+<button [routerLink]="[ '/home' ]">Back to >>> Home</button>
+</div>
+</div>
+<div class="prod">
+<router-outlet></router-outlet>
+</div>

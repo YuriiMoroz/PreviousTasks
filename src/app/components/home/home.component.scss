@@ -1,0 +1,48 @@
+.cntainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    .box{
+        border: 1px solid gray;
+        border-radius: 5px;
+        .btn{
+            border-top:1px solid gray;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: rgb(226, 226, 226);
+            button{
+                height: 35px;
+                width: 80%;
+                border-radius: 5px;
+                background-color: green;
+                border: none;
+                color: white;
+            }
+        }
+        .text{
+            text-align: center;
+            font-weight: 600;
+            color: red;
+            font-size: 20px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}
+.Cenzor{
+    background-image: url('./img/Cenzor.png');
+}
+.Users{
+    background-image: url('./img/Users.png');
+}
+.Task{
+    background-image: url('./img/Task.png');
+}
+
+.picture{
+    height: 150px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+}
